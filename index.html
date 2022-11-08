@@ -41,7 +41,7 @@
     </nav>
 
     <header class="container">
-        <div id="carouselMain" class="carousel carousel-dark slide" data-ride="carousel"> <!--padrão para criação de banner rotativo-->
+        <div id="carouselMain" class="carousel carousel-dark slide" data-ride="carousel"> <!--era pra aparecer 3 botoes pequenos na parte debaixo do banner-->
             <ol class="carousel-indicators">
                 <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselMain" data-slide-to="1" class="active"></li>
@@ -61,7 +61,16 @@
                     <img src="./imgs/slides/slide01small.jpg" alt="foto de frutas diversas" class="img-fluid d-block d-md-none">
                 </div>                
             </div>
+            <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </a>
         </div>
+        <hr class="mt-3">
     </header>
 
     <main>
