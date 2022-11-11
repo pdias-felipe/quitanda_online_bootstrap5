@@ -22,7 +22,7 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 
-    <title>Quitanda Online :: Titulo da Página</title>
+    <title>Quitanda Online :: Cadastro</title>
 
 </head>
 
@@ -94,10 +94,53 @@
                                     <span class="form-text">(com DDD, somente números)</span>
                                 </div>
                         </fieldset>
+                    </div>  
+                    <div class="col-sm-12 col-md-6">
+                        <fieldset class="row">
+                            <legend>Endereço</legend>
+                            <div class="mb-3 col-md-6 col-lg-4">
+                                <label for="txtCEP" class="form-label">CEP</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="txtCEP">
+                                    <span class="input-group-text p-1">
+                                        <svg class="bi" width="24" height="24" fill="currentColor">
+                                            <use xlink:href="/bi.svg#hourglass-split"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-8 align-self-end">
+                                <textarea class="form-control text-muted bg-light" style="height:68px;" disabled>Digite o CEP para buscarmos o endereço.</textarea>
+                            </div>
+                            <div class="mb-3 col-md-4">
+                                <label for="txtNumero" class="form-label">Número</label>
+                                <input type="text" class="form-control" id="txtNumero">
+                            </div>
+                            <div class="mb-3 col-md-8">
+                                <label for="txtComplemento" class="form-label">Complemento</label>
+                                <input type="text" class="form-control" id="txtComplemento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtReferencia" class="form-label">Referência</label>
+                                <input type="text" class="form-control" id="txtReferencia">
+                            </div>
+                        </fieldset>
                     </div>
                     
-                    </div>
-            
+                    
+
+                </div>
+                <hr>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" value="" id="chkPromocoes">
+                    <label for="chkPromocoes" class="form-check-label">Desejo receber informações sobre promoções.</label>
+                </div>
+                <div class="mb-3">
+                    <a class="btn btn-light btn-outline-danger" href="/index.html">Cancelar</a>
+                    <input type="button" value="Criar meu cadastro" class="btn btn-danger" 
+                    onclick="window.location.href='/confirmarcadastro.html'">
+                </div>
+            </form>
         </div>
     </main>
 
