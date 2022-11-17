@@ -6,6 +6,11 @@ p.truncate-3l{
     text-overflow: ellipsis;
 }
 
+.flex-even{
+    flex: 1;
+    min-width: 300px;
+}
+
 @media screen and (max-width: 469px){
     .mt-sx-3{
         margin-top: 1rem;
