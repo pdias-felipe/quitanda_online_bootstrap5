@@ -59,60 +59,85 @@
 
     <main class="flex-fill">
         <div class="container">
-            <h1>Selecione o Endereço da Entrega</h1>
+            <h1>Selecione Forma de Pagamento</h1>
             <h3 class="mb-4">
-                Selecione o endereço de entrega e clique em <b>Continuar</b> para 
-                prosseguir para a <b> seleção de forma de pagamento</b>.
+                Selecione a forma de pagamento e cliquem em <b>Continuar</b> para 
+                prosseguir para <b>concluir o pedido</b>.
             </h3>
             <hr>
 
-            <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
+            <div class="d-flex justify-content-between flex-wrap border rounded-top pt-4 px-3">
                 <div class="mb-4 mx-2 flex-even">
-                    <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end1">
-                    <label class="btn btn-outline-danger p-4 h100 w-100" for="end1">
+                    <input type="radio" class="btn-check" name="pagamento" autocomplete="off" id="pag1">
+                    <label class="btn btn-outline-danger p-4 h100 w-100" for="pag1">
                         <h3>
-                            <b class="text-dark">Minha Casa</b><br>
-                            <hr>
-                            <b>Felipe Dias</b><br>
-                            Rua do Dev, 1000 <br>
-                            Matrix/PC <br>
-                            CEP 02.022-020
+                            <b class="text-dark">Cartão de Crédito</b>
                         </h3>
+                            <hr>
+                        <form action="">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" autofocus id="txtNome" placeholder=" ">
+                                    <label for="txtNome" class="text-black-50">Nome Impresso no Cartão</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" autofocus id="txtNumero" placeholder=" ">
+                                    <label for="txtNumero" class="text-black-50">Número do Cartão</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" autofocus id="txtValidade" placeholder=" ">
+                                    <label for="txtValidade" class="text-black-50">Validade (mm/aa)</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" autofocus id="txtCodigo" placeholder=" ">
+                                    <label for="txtCodigo" class="text-black-50">Código de Segurança</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <select id="selParcelas" class="form-select">
+                                        <option value="1" selected>À vista</option>
+                                        <option value="2">2 x sem juros</option>
+                                        <option value="3">3 x sem juros</option>
+                                        <option value="4">4 x sem juros</option>
+                                        <option value="5">5 x sem juros</option>
+                                        <option value="6">6 x sem juros</option>
+                                    </select>
+                                    <label for="selParcelas" class="text-black-50">Parcelamento</label>
+                                </div>
+                        </form>                        
                     </label>                    
                 </div>
 
                 <div class="mb-4 mx-2 flex-even">
-                    <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end2">
-                    <label class="btn btn-outline-danger p-4 h100 w-100" for="end2">
+                    <input type="radio" class="btn-check" name="pagamento" autocomplete="off" id="pag2">
+                    <label class="btn btn-outline-danger p-4 h100 w-100" for="pag2">
                         <h3>
-                            <b class="text-dark">Meu Trabalho</b><br>
-                            <hr>
-                            <b>Felipe Dias</b><br>
-                            Rua do Dev, 1000 <br>
-                            Matrix/PC <br>
-                            CEP 02.022-020
+                            <b class="text-dark">Dinheiro</b>
                         </h3>
+                            <hr>
+                            <form action="">
+                                <h4>Valor da Compra: <b>R$ 58,25</b></h4>
+                                <br>
+                                <p>
+                                    Se precisar de troco, informe no campo abaixo.
+                                </p>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="txtTroco" placeholder=" ">
+                                    <label for="txtTroco" class="text-black-50">Precisa de troco para quanto?</label>
+                                </div>
+                            </form>
+                        
                     </label>                    
                 </div>
 
-                <div class="mb-4 mx-2 flex-even">
-                    <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end3">
-                    <label class="btn btn-outline-danger p-4 h100 w-100" for="end3">
-                        <h3>
-                            <b class="text-dark">Casa da Praia</b><br>
-                            <hr>
-                            <b>Felipe Dias</b><br>
-                            Rua do Dev, 1000 <br>
-                            Matrix/PC <br>
-                            CEP 02.022-020
-                        </h3>
-                    </label>                    
-                </div>
+                
             </div>
 
             <div class="text-end border border-top-0 rounded-bottom p-4 pb-0">
-                <a href="/fechamento_itens.html" class="btn btn-outline-success btn-lg mb-4">Voltar aos Itens</a>
-                <a href="/fechamento_pagamento.html" class="btn btn-danger btn-lg ms-2 mb-4">Continuar</a>
+                <a href="/fechamento_endereco.html" class="btn btn-outline-success btn-lg mb-4">Voltar aos Endereços</a>
+                <a href="/fechamento_pedido.html" class="btn btn-danger btn-lg ms-2 mb-4">Finalizar</a>
             </div>
                         
 
