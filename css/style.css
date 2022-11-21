@@ -11,6 +11,11 @@ p.truncate-3l{
     min-width: 300px;
 }
 
+.accordion-button:not(.collapsed){
+    color: #fff;
+    background-color: #dc3545;
+}
+
 @media screen and (max-width: 469px){
     .mt-sx-3{
         margin-top: 1rem;
